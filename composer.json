@@ -1,0 +1,25 @@
+{
+    "name": "surgicallabs/sb_schema",
+    "description": "StartBox's shared schema files",
+    "license": "MIT",
+    "type": "package",
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "StartBox\\Schema\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "StartBox\\Schema\\Provider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
