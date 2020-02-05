@@ -3,6 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\Models\Location;
+use App\Models\Organization;
 use Faker\Generator as Faker;
 
 $factory->define(Location::class, function (Faker $faker) {
