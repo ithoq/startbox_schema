@@ -10,6 +10,6 @@ $factory->define(Facility::class, function (Faker $faker) {
 		'organization_id' => factory(Organization::class),
 		'title' => $faker->catchPhrase,
 		'description' => $faker->catchPhrase,
-		'timezone' => $faker->catchPhrase,
+		'timezone' => 'America/New_York',
 	];
 });
