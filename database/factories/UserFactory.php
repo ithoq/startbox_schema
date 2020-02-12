@@ -18,7 +18,7 @@ $factory->define(User::class, function (Faker $faker) {
             return $user['first_name'] . ' ' . $user['last_name'];
         },
         'email' => $faker->unique()->safeEmail,
-        'password' => $password ?: $password = bcrypt('secret'),
+        'password' => $password ?: $password = bcrypt('password'),
         'token' => Str::random(20),
         'sso_id' => Str::random(20),
     ];
@@ -47,6 +47,6 @@ $factory->state(App\Models\User::class, 'provider', function (Faker $faker) {
         },
     ];
 });
-$factory->afterMakingState(App\User::class, 'provider', function ($user, $faker) {
+$factory->afterMakingState(App\Models\User::class, 'provider', function ($user, $faker) {
     $user->profileable->attach($user->organization);
 });
