@@ -16,3 +16,10 @@ $factory->define(Provider::class, function (Faker $faker) {
         'suffix_type' => Arr::random(['md', 'phd', 'md-phd', 'rn', 'pa', 'np']),
     ];
 });
+
+$factory->afterCreatingState(Provider::class, 'as-user', function ($provider, $faker) {
+    factory(User::class)->create([
+        'profileable_id' => $provider->id,
+        'profileable_type' => Provider::class,
+    ]);
+});
