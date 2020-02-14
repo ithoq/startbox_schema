@@ -3,6 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\Models\Location;
+use App\Models\Facility;
 use App\Models\Organization;
 use Faker\Generator as Faker;
 
