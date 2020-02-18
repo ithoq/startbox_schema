@@ -25,6 +25,7 @@ class CreateProceduresTable extends Migration
             $table->integer('laterality');
             $table->text('description');
             $table->text('script');
+            $table->timestamp('completed_at')->nullable();
             $table->timestamp('scheduled_at')->nullable();
             $table->timestamp('archived_at')->nullable();
             $table->timestamp('canceled_at')->nullable();
