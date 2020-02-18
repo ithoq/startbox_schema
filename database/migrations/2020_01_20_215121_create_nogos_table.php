@@ -20,8 +20,7 @@ class CreateNogosTable extends Migration
             $table->unsignedBigInteger('patient_id');
             $table->unsignedBigInteger('procedure_id');
             $table->unsignedBigInteger('creator_id')->nullable();
-            $table->string('title');
-            $table->string('status')->nullable();
+            $table->tinyInteger('reason_id');
             $table->text('description');
             $table->timestamp('resolved_at')->nullable();
             $table->timestamps();
