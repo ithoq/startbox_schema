@@ -29,6 +29,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->boolean('email_confirmed')->default(false);
             $table->boolean('is_admin')->default(false);
+            $table->text('settings')->nullable();
             $table->timestamps();
             $table->softDeletes();
 
