@@ -5,6 +5,7 @@ namespace StartBox\Schema\Seeds;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Arr;
 use Carbon\Carbon;
 use Faker;
 
