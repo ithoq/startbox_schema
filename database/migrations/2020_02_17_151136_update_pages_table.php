@@ -27,8 +27,8 @@ class UpdatePagesTable extends Migration
     public function down()
     {
         Schema::table('pages', function (Blueprint $table) {
-            $table->string('title');
-            $table->text('content');
+            $table->string('title')->nullable();
+            $table->text('content')->nullable();
             $table->dropColumn('requires_agreement');
         });
     }
