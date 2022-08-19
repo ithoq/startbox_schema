@@ -1,5 +1,5 @@
 {
-    "name": "pmrzygweb/startbox-schema",
+    "name": "ithoq/startbox-schema",
     "description": "StartBox's shared schema files",
     "license": "MIT",
     "type": "package",
